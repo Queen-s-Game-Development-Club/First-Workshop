@@ -45,7 +45,7 @@ android.debug.arm64 = "res://bin/libgdexample.android.template_debug.arm64.so"
 android.release.arm64 = "res://bin/libgdexample.android.template_release.arm64.so"
 ```
 
-each time you would like to rebuild the code in the GDExtensinn, run,
+each time you would like to rebuild the code in the GDExtension, run,
 
 ```
 scons platform=Windows
