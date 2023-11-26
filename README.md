@@ -10,13 +10,13 @@ tested this to work with Visual Studio 2022 and Godot Engine v4.13-stable.
 Godot: https://godotengine.org/
 Visual Studio: https://visualstudio.microsoft.com/vs/
 
-After cloning this repository, ensure to also clone the Git submodules.
+After cloning this repository, run,
 
 ```
-git submodule update --init
+scons platform=Windows
 ```
 
-create a file in demo/bin called gdexample.gdextension with the following
+Then, create a file in demo/bin called gdexample.gdextension with the following
 contents,
 
 ```
@@ -45,11 +45,11 @@ android.debug.arm64 = "res://bin/libgdexample.android.template_debug.arm64.so"
 android.release.arm64 = "res://bin/libgdexample.android.template_release.arm64.so"
 ```
 
-finally, to build the game,
+each time you would like to rebuild the code in the GDExtensinn, run,
 
 ```
 scons platform=Windows
 ```
 
-I've found that this only works when the Godot editor is closed. there must be a
+I've found that this only works when the Godot editor is closed. There must be a
 better way. But for the purpose of this tutorial, this is what we got.
