@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbs5tbaag702m"]
+
+[ext_resource type="Texture2D" uid="uid://drceqcdl4s5go" path="res://Beta_Happy.png" id="1_puvyw"]
+[ext_resource type="Script" path="res://printer.gd" id="2_ou1c5"]
+
+[node name="myScene" type="Node2D"]
+
+[node name="The_Game" type="The_Game" parent="."]
+
+[node name="player" type="Sprite2D" parent="The_Game"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_puvyw")
+
+[node name="Camera2D" type="Camera2D" parent="The_Game"]
+
+[node name="printer" type="Node" parent="The_Game"]
+script = ExtResource("2_ou1c5")
